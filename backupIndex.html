@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Wishlist</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Movies Wishlist</h1>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <div class="card-header">
+            <h2 class="card-title shadow">
+              Discover Movies<br />And Add To Your Wishlist
+            </h2>
+          </div>
+          <div class="card-body">
+            <!-- <label for="inputBookId">ID Buku</label> -->
+            <input id="inputMovieTitle" type="text" placeholder="Movie Title" required/>
+            <input
+              type="submit"
+              value="Submit"
+              name="Submit"
+              class="btn-submit"
+            />
+          </div>
+        </div>
+        <div class="movies-container">
+          <div class="movies-list">
+            <h2 class="movies-header">Wishlist</h2>
+            <div class="list-item" id="wishlist-movie"></div>
+            <!-- <div class="item shadow">
+              <img src="./assets/pics/1.png" alt="" srcset="" />
+              <p>description</p>
+            </div>
+            <div class="item shadow">
+              <img src="./assets/pics/1.png" alt="" srcset="" />
+              <p>description</p>
+            </div> -->
+          </div>
+          <div class="movies-list">
+            <h2 class="movies-header">Already Watched</h2>
+            <div class="list-item" id="completed-movie"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>

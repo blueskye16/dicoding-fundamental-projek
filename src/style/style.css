@@ -1,0 +1,214 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(228, 213, 228);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgb(68, 65, 70);
+  padding: 2px;
+  margin: 0px;
+  color: white;
+  /* width: 100%; */
+  /* height: 80px; */
+  /* font-size: 24px; */
+}
+
+/* header h1 {
+  margin-left: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+} */
+
+h1 {
+  padding-left: 25px;
+  font-size: 28px;
+}
+
+.container {
+  width: 100vw;
+  height: 50vh;
+  /* background: #4987c9; */
+  text-align: center;
+  display: inline-block;
+  background-image: linear-gradient(
+    rgba(4, 10, 30, 0.712),
+    rgba(4, 9, 30, 0.404)
+  ),
+  url("../assets/image/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg");
+  /* background-image: url("../assets/image/samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg"), linear-gradient(rgba (0, 0, 0, 0.8)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+.card-header {
+  font-size: 25px;
+}
+
+.card-title {
+  margin-top: 30px;
+  color: white;
+}
+
+.card-body {
+  margin-top: 100px;
+  position: relative;
+}
+
+#inputMovieTitle {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#inputMovieTitle[type="text"] {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.btn-submit {
+  width: fit-content;
+  font-family: Raleway, sans-serif;
+  border-radius: 16px;
+  padding: 12px 24px;
+  color: black;
+  font-size: 24px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+  border: none;
+}
+
+/* after  */
+
+
+.movies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+#src-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-size: 16px;
+  color: #333;
+}
+
+#src-button {
+  padding: 10px 20px;
+  background-color: aquamarine;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 0 6px rgba();
+  cursor: pointer;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.src-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.src-result {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.src-result img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+
+.src-result:hover img {
+  opacity: 0.6;
+}
+
+.src-result a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#show-more-button {
+  background-color: greenyellow;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 760px) {
+  .src-results {
+    padding: 20px;
+  }
+  .src-result {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .src-result {
+    width: 100%;
+  }
+}
